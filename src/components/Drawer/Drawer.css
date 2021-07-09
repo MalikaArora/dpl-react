@@ -1,0 +1,11 @@
+.overlay_button {
+    z-index: 10000;
+}
+
+.drawer {
+    color: white;
+    width: 50vw !important;
+    /* height: 100% !important; */
+    background-color: #1c1b1b;
+    /* padding-top: 50vh; */
+}
