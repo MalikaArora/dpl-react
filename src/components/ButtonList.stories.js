@@ -1,23 +1,23 @@
-import React from 'react';
 
-import ButtonList from '@dpl/react-button-list';
-import Button from '@dpl/react-button'
+import React from "react";
+import ButtonList from "@dpl/react-button-list";
 
 export default {
-  title: 'ButtonList',
-  component: ButtonList,
-  
+  title: "ButtonList",
+  args: {
+    spacing: 1,
+    vertical: false,
+  },
 };
 
-const Template = (args) => <ButtonList {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  spacing: 1,
-  vertical: false,
-  children: <div>
-      <Button>Click Here 1</Button>
-      <Button>Click Here 2</Button>
-  </div>,
+export const Basic = (props) => {
   
+  return (
+    <ButtonList {...props}>
+      <button>Click Here 1</button>
+      <button>Click Here 2</button>
+      <button>Click Here 3</button>
+      <button>Click Here 4</button>
+    </ButtonList> 
+  );
 };
