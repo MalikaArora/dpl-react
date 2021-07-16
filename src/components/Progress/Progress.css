@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f4f4f4;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
+
+.progress-done {
+	/* background: linear-gradient(to left, #F2709C, #FF9472); */
+    /* box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C; */
+    box-shadow: 0 3px 3px -5px #000000, 0 2px 5px #000000;
+
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90%;
+	width: 0;
+	opacity: 0;
+    transition: 1s ease 0.3s;
+    
+   
+}
+
+.progress_gradient{
+    background: #7453e0;
+    background: linear-gradient(90deg, #F2709C 0%, #FF9472 33%, #FF9472 66%, #F2709C 100%);
+    background-size: 300%;
+    -webkit-animation: errorBg 3s linear infinite;
+            animation: errorBg 3s linear infinite;
+}
+
+
+@-webkit-keyframes errorBg {
+    0% {
+      background-position: 300%;
+    }
+    100% {
+      background-position: 0%;
+    }
+    /* 100% {
+        background-position: 300%;
+      } */
+  }
+  @keyframes errorBg {
+    0% {
+      background-position: 300%;
+    }
+    100% {
+        background-position: 0%;
+      }
+      /* 100% {
+          background-position: 300%;
+        } */
+  }
+  
+
+
+
+  

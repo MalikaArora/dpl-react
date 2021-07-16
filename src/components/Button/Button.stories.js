@@ -14,9 +14,6 @@ export default{
 
 
 export const PrimaryButton = () => <App 
-    
-    
-
 variant='btn_primary'  disabled={boolean('Disabled', false)}>
 {text('Label', 'Primary')}
 </App>

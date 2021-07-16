@@ -29,7 +29,7 @@ export const Basic = (props) => {
   return (
     <WindowEvent {...props} handler={handler}>
       <div style={{ height: "2000px" }}>
-        <table>
+        <table style={{position:"sticky", top:0}}>
           <tr>
             <th>resize</th>
             <th>scroll</th>

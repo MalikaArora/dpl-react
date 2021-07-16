@@ -1,0 +1,5 @@
+@import "@avrc/global-styles/styles.css";
+.example {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
