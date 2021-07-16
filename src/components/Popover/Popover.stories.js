@@ -33,3 +33,5 @@ export const ShowPopover = () => {
     </section>
        );
       }
+
+      ShowPopover.storyName='Popover';

@@ -30,3 +30,5 @@ export const Basic = (props) => {
     </Content> 
   );
 };
+
+Basic.storyName='Content';

@@ -3,7 +3,7 @@ import React from "react";
 import DropDownList from "@dpl/react-dropdown-list";
 
 export default {
-  title: "DropDownList",
+  title: "Drop Down",
   args: {
     children: 
     <>
@@ -39,3 +39,5 @@ export const Basic = (props) => {
     </>
   );
 };
+
+Basic.storyName='Drop down - Error';

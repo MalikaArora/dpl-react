@@ -33,3 +33,5 @@ export const ShowTooltip = () => {
     </section>
        );
       }
+
+      ShowTooltip.storyName='Tooltip';

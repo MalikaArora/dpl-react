@@ -20,3 +20,5 @@ export const Basic = (props) => {
     </>
   );
 };
+
+Basic.storyName='Button';

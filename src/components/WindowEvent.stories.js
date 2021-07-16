@@ -43,3 +43,5 @@ export const Basic = (props) => {
     </WindowEvent>
   );
 };
+
+Basic.storyName='Window Event';

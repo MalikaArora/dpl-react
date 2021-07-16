@@ -31,3 +31,5 @@ export const ShowNavbar = () => {
     </Router>
   );
 }
+
+ShowNavbar.storyName='Navbar';

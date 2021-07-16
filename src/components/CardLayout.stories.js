@@ -3,7 +3,7 @@ import CardLayout from '@dpl/react-card-layout';
 import Card from '@dpl/react-card';
 
 export default {
-  title: 'CardLayout',
+  title: 'Card Layout',
   component: CardLayout,
 };
 
@@ -35,3 +35,5 @@ Basic.args = {
     </Card>
   </React.Fragment>,
 };
+
+Basic.storyName='Card Layout';

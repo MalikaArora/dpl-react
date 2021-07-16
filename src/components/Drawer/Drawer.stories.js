@@ -34,3 +34,5 @@ export const ShowDrawer = () => {
       </div>
        );
       }
+
+      ShowDrawer.storyName='Drawer';

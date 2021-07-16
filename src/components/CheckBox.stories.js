@@ -3,7 +3,7 @@ import React from "react";
 import CheckBox from "@dpl/react-checkbox";
 
 export default {
-  title: "CheckBox",
+  title: "Check Box",
   args: {
     label: 'Check It',      
   },
@@ -25,3 +25,5 @@ export const Basic = (props) => {
     </>
   );
 };
+
+Basic.storyName='Check Box';

@@ -8,8 +8,8 @@ export default {
 
 const Template = (args) => <Card {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const ShowCard = Template.bind({});
+ShowCard.args = {
   maxWidth: '250px',
   primary: true,
   className: "uhc",
@@ -19,3 +19,5 @@ Primary.args = {
       <button>Primary</button>
   </div>,
 };
+
+ShowCard.storyName='Card';

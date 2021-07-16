@@ -3,11 +3,12 @@ import ShowDropdown from './DropDown.js';
 import React, {useState} from 'react';
 
 export default {
-    title: 'DropDown',
+    title: 'Drop Down',
     // component: Button
     
 }
 
-export const DropDownn = () =>
+export const DropDown = () =>
     <ShowDropdown></ShowDropdown>
 
+    DropDown.storyName='Drop Down - Basic';

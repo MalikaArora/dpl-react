@@ -3,7 +3,7 @@ import React from "react";
 import ButtonList from "@dpl/react-button-list";
 import Button from "@dpl/react-button";
 export default {
-  title: "ButtonList",
+  title: "Button List",
   args: {
     spacing: 1,
     vertical: false,
@@ -22,3 +22,6 @@ export const Basic = (props) => {
     </ButtonList> 
   );
 };
+
+Basic.storyName='Button List';
+

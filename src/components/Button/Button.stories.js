@@ -4,7 +4,7 @@ import Center from '../Center/Center';
 import {text,boolean} from '@storybook/addon-knobs';
 
 export default{
-    title: 'ButtonTypes/Button',
+    title: 'Button',
     // component: Button
     decorators: [story => <Center>{story()}</Center>],
     argTypes: {

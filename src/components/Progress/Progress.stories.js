@@ -1,6 +1,6 @@
 import Progress from './Progress';
 export default {
-    title: 'Progress',
+    title: 'Progress Bar',
     argTypes: {
       variant: {control: 'text'}
   }
@@ -25,3 +25,5 @@ export const ShowProgress = (props) => {
 
 	</>
 }
+
+ShowProgress.storyName='Linear Progress Bar';

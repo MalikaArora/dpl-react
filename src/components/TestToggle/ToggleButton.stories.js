@@ -1,7 +1,7 @@
 import './ToggleButton.css';
 import ToggleButton from './ToggleButton'
 export default {
-    title: 'Toggle/Pills',
+    title: 'Toggle',
     argTypes: {
       variant: {control: 'text'}
   }
@@ -46,3 +46,4 @@ export const App = () => {
   );
 }
 
+App.storyName='Toggle';
