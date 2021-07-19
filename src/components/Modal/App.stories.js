@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal } from './components/Modal';
+import { Modal } from './Modal';
+
+export default {
+    title: 'Modal'
+}
 
 const Container = styled.div`
   display: flex;
@@ -20,7 +24,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-function App() {
+export const ShowModal = () => {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -32,10 +36,8 @@ function App() {
       <Container>
         <Button onClick={openModal}>I'm a modal</Button>
         <Modal showModal={showModal} setShowModal={setShowModal} />
-        <GlobalStyle />
       </Container>
     </>
   );
 }
 
-export default App;

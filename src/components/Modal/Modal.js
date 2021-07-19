@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
+import Logo from './images/logo.svg';
 
 const Background = styled.div`
   width: 100%;
@@ -14,8 +15,8 @@ const Background = styled.div`
 `;
 
 const ModalWrapper = styled.div`
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 300px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
@@ -41,7 +42,10 @@ const ModalContent = styled.div`
   line-height: 1.8;
   color: #141414;
   p {
+      padding: 0.5rem;
     margin-bottom: 1rem;
+    align-items: center;
+    text-align: center;
   }
   button {
     padding: 10px 24px;
@@ -103,10 +107,10 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <ModalImg src={require('./modal.jpg')} alt='camera' />
+              <ModalImg src={Logo} alt='camera' />
               <ModalContent>
-                <h1>Are you ready?</h1>
-                <p>Get exclusive access to our next launch.</p>
+                <h3>We create a healthier world.</h3>
+                <p>One insight, one connection, one person at a time.</p>
                 <button>Join Now</button>
               </ModalContent>
               <CloseModalButton

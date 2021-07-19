@@ -1,0 +1,41 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 50px;
+  }
+  
+  .card-box {
+    background: #616c6d;
+    padding: 10px;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .card-box p::first-letter {
+    text-transform: capitalize;
+  }
+  
+  #root {
+    overflow: auto;
+  }  
+
+  #root {
+    height: 100%;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+  
+  .title {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #fff;
+  }

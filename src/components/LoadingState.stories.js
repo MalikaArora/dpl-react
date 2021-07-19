@@ -6,9 +6,9 @@ export default {
 
 
 export const Example = () => {
-  const error = false; // bool or string value
-  const hasLoaded = false;
-  const isLoading = false;
+  const error = 'Data not found'; // bool or string value
+  const hasLoaded = true;
+  const isLoading = true;
 
   return (
     <LoadingState error={error} loading={isLoading}>
