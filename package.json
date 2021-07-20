@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@avrc/flex": "^0.2.1",
     "@avrc/global-styles": "^0.2.2",
     "@avrc/loading-state": "^0.2.2",
     "@avrc/modal": "^0.1.3",

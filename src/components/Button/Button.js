@@ -1,5 +1,5 @@
 import Button from '@dpl/react-button';
-import './Button.css';
+import './Button.scss';
 
 //logo, icon
 

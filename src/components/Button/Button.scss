@@ -1,0 +1,73 @@
+@import '../colors.scss';
+
+.btn_primary {
+    background-color: $uhcBrightBlue;
+    color: white;
+    margin: 2%;
+    border-width: 2px;
+    border-color:$uhcBrightBlue;
+
+
+}
+.btn_primary:hover{
+        background-color: white;
+        color: $uhcBrightBlue;
+        box-shadow: 0 2.5px 7.5px rgb(52, 152, 219, 0.4);
+}
+.btn_secondary {
+  margin: 2%;
+    border-width: 2px;
+    background-color:#ffffff;
+    color: $gray1;
+    border-color: $gray1;
+}
+.btn_secondary:hover{
+        background-color: $gray1;
+        /* border-color:#3498db; */
+        color: #ffffff;
+        box-shadow: 0 2.5px 7.5px $gray1;
+}
+.btn_success {
+  margin: 2%;
+  border-width: 2px;
+    background-color: $uhcGold;
+    color: black;
+    border-color:$uhcGold;
+}
+.btn_success:hover{
+        background-color: white;
+        /* border-color:#3498db; */
+        color: black;
+        box-shadow: 0 2.5px 7.5px $uhcGold;
+}
+
+
+.btn_danger {
+  margin: 2%;
+
+    border-color: #e9250b;
+    color: #e9250b;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+  }
+  .btn_danger:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #e9250b;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+  .btn_danger:hover {
+    color: #fff;
+    box-shadow: 0 2.5px 7.5px rgb(233, 37, 11, 0.4);
+  }
+  .btn_danger:hover:after {
+    width: 110%;
+  }

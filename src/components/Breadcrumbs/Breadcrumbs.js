@@ -4,6 +4,7 @@ import Home from "./Home";
 import Item1 from "./Item1";
 import Item2 from "./Item2";
 import Item3 from "./Item3";
+import '@dpl/react-custom-breadcrumbs';
 
 const ShowBreadcrumbs = () => {
   return(

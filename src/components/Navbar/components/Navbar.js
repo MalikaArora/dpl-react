@@ -1,36 +1,37 @@
 import React, { useState } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import Dropdown from './Dropdown';
-import Logo from "./logo.svg";
+import {Button, Link, Dropdown, Logo} from '../index.js';
+// import { Button } from './Button';
+// import { Link } from 'react-router-dom';
+// import './Navbar.css';
+// import Dropdown from './Dropdown';
+// import Logo from "./logo.svg";
 import '../../../../node_modules/font-awesome/css/font-awesome.min.css';
 
-function Navbar() {
+function Navbar(props) {
 
-  const extendElement = () => { dropdown ? setDropdown(false) : setDropdown(true); }
+  // const extendElement = () => { dropdown ? setDropdown(false) : setDropdown(true); }
 
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  // const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
+  // const onMouseEnter = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown(false);
+  //   } else {
+  //     setDropdown(true);
+  //   }
+  // };
 
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
+  // const onMouseLeave = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown(false);
+  //   } else {
+  //     setDropdown(false);
+  //   }
+  // };
 
   return (
     <>
@@ -49,9 +50,9 @@ function Navbar() {
           </li>
           <li 
             className="nav-item" 
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave} 
-            onClick={extendElement} 
+            onMouseEnter={props.onMouseEnter} 
+            onMouseLeave={props.onMouseLeave} 
+            onClick={props.extendElement} 
           >
             <Link
               to='/services'
@@ -60,7 +61,7 @@ function Navbar() {
             >
               Services <i className='fa fa-caret-down' />
             </Link>
-            {dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu}/>} 
+            {props.dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu}/>} 
           </li>
           <li className='nav-item'>
             <Link

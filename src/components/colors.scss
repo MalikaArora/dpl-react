@@ -1,0 +1,108 @@
+// AVRC Data viz palette based on UHC colors
+
+// Primary
+$uhcBlue : #002677;
+$uhcBrightBlue : #00BED5;
+$uhcGold : #f5b700;
+$uhcOrange : #ff681f;
+$avrcBlue : #0037ad;
+$avrcGray1 : #ccc;
+$avrcGray2 : #a6a6a6;
+$avrcGray3 : #808080;
+$avrcGray4 : #5a5a5a;
+$avrcGray5 : #333;
+$avrcOrange : #ba5710;
+$avrcDarkOrange : #ab5a1f;
+$avrcBorderOrange : #9c4506;
+
+// Tints
+$uhcBrightBlueTint : #e5f8fb;
+$uhcLightGray : #f4f4f4;
+$uhcMediumGray : #dadbdc;
+$uhcDarkGray : #5a5a5a;
+$uhcBodyCopy : uhcDarkGray;
+
+// Limited Use
+$uhcCtaOrange : #d14600;
+$uhcCtaDarkOrange : #aa3600;
+$uhcCtaBlue : #196ecf;
+
+// End AVRC data viz
+
+$gray1 : #282a2e;
+$gray2 : #434448;
+$gray3 : #63666a;
+$gray4 : #888b8d;
+$gray5 : #b1b2b3;
+$gray6 : #d0d0ce;
+$gray7 : #efefee;
+$white : #ffffff;
+$brandOrange : uhcOrange;
+$brandGold : uhcGold;
+$textLinkBlue : #005187;
+$errorState : #e32315;
+$orange1 : #492003;
+$orange2 : #793605;
+$orange3 : #c25608;
+$orange4 : #ea8636;
+$orange5 : #f1b273;
+$orange6 : #f6ce9e;
+$orange7 : #fdf8df;
+$teal1 : #033933;
+$teal2 : #055f54;
+$teal3 : #1c9182;
+$teal4 : #5ab5a5;
+$teal5 : #93d1c5;
+$teal6 : #b7e0d8;
+$teal7 : #edf7f5;
+$blue1 : #002843;
+$blue2 : #004370;
+$blue3 : #1965ae;
+$blue4 : #5686ca;
+$blue5 : #8faedc;
+$blue6 : #b4c9e7;
+$blue7 : #ecf2f9;
+$text : #444444;
+$selected : #dae4f3;
+
+// Primary
+$color-white: #ffffff;
+$color-orange: #e87722;
+$color-gold: #f2b411;
+$color-gray-1: #222222;
+$color-gray-2: #444444;
+$color-gray-3: #636363;
+$color-gray-4: #959595;
+$color-gray-5: #b3b3b3;
+$color-gray-6: #e0e0e0;
+$color-gray-7: #f5f5f5;
+
+// Accent
+$color-red-1: #a32a2e;
+$color-red-2: #d13f44;
+$color-purple-1: #422c88;
+$color-purple-2: #8061bc;
+$color-teal-1: #007c89;
+$color-teal-2: #6fc1b1;
+$color-green: #90bc53;
+
+// Specific use
+$color-blue-1: #00396c;
+$color-blue-2: #316bbe;
+$color-blue-3: #83c8ff;
+$color-accessible-orange: #c25608;
+$color-error-red: #e32315;
+$color-success-green: #627d32;
+
+// Gradient
+$color-gradient-1: linear-gradient(to right, #c3373f, #e6a30b);
+$color-gradient-2: linear-gradient(to right, #422c88, #c7383d);
+$color-gradient-3: linear-gradient(to right, #356bbe, #077a6f);
+$color-gradient-4: linear-gradient(to right, #055a53, #83b145);
+$color-gradient-5: linear-gradient(to right, #01685c, #3bb6a7);
+$color-gradient-6: linear-gradient(to right, #114475, #5a8fc3);
+$color-gradient-7: linear-gradient(to right, #033465, #8061bc);
+
+// Theme gradients
+$color-gradient-optum: linear-gradient(to right, #d13f44, #f2b411);
+$color-gradient-uhc: linear-gradient(to right, #003da1, #00a8f7);
