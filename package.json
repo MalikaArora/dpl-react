@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@avrc/data-select": "^0.4.5",
+    "@avrc/data-table": "^0.3.5",
+    "@avrc/error-boundary": "^0.1.3",
+    "@avrc/error-icon": "^0.1.4",
     "@avrc/flex": "^0.2.1",
+    "@avrc/form-elements": "^0.2.13",
     "@avrc/global-styles": "^0.2.2",
     "@avrc/loading-state": "^0.2.2",
     "@avrc/modal": "^0.1.3",

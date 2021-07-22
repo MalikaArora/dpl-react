@@ -1,35 +1,34 @@
 import React from "react";
-  
-const Bar = ({ fill = '#000', x, y, height, width }) => (
-  <rect fill={fill} x={x} y={y} height={height} width={width} />
-)
 
-const greatestValue = values =>
-  values.reduce((acc, cur) => (cur > acc ? cur : acc), -Infinity)
+const STROKE = 1;
 
-
-const BarChart = ({
-  barWidth,
-  barMargin,
+const LineChart = ({
   data,
+  height,
+  width,
   horizontalGuides: numberOfHorizontalGuides,
   verticalGuides: numberOfVerticalGuides,
-  precision,
-  
-
-}) => {  
-    
-  const FONT_SIZE = barWidth * 0.2;
+  precision
+}) => {
+  const FONT_SIZE = width / 50;
+  const maximumXFromData = Math.max(...data.map(e => e.x));
   const maximumYFromData = Math.max(...data.map(e => e.y));
 
   const digits =
     parseFloat(maximumYFromData.toString()).toFixed(precision).length + 1;
 
   const padding = (FONT_SIZE + digits) * 3;
-  const chartWidth = (data.length * (barWidth + barMargin));
-  const chartHeight = greatestValue(data.map(datum => datum.y));
-  const width = chartWidth + padding * 2;
-  const height = greatestValue(data.map(datum => datum.y)) + padding * 2;
+  const chartWidth = width - padding * 2;
+  const chartHeight = height - padding * 2;
+
+  const points = data
+    .map(element => {
+      const x = (element.x / maximumXFromData) * chartWidth + padding;
+      const y =
+        chartHeight - (element.y / maximumYFromData) * chartHeight + padding;
+      return `${x},${y}`;
+    })
+    .join(" ");
 
   const Axis = ({ points }) => (
     <polyline fill="none" stroke="#ccc" strokeWidth=".5" points={points} />
@@ -97,11 +96,11 @@ const BarChart = ({
 
     return data.map((element, index) => {
       const x =
-        ((barWidth + barMargin) / width) * chartWidth + padding - FONT_SIZE / 2;
+        (element.x / maximumXFromData) * chartWidth + padding - FONT_SIZE / 2;
       return (
         <text
           key={index}
-          x={index * (barWidth + barMargin) + padding}
+          x={x}
           y={y}
           style={{
             fill: "#808080",
@@ -143,27 +142,31 @@ const BarChart = ({
   return (
     <svg
       viewBox={`0 0 ${width} ${height}`}
-    >      
-        <XAxis />
-        <LabelsXAxis />
-        <YAxis />
-        <LabelsYAxis />
-        {numberOfVerticalGuides && <VerticalGuides />}
-        <HorizontalGuides />
+      //style={{ border: "0.5px solid #ccc" }}
+    >
+      <XAxis />
+      <LabelsXAxis />
+      <YAxis />
+      <LabelsYAxis />
+      {numberOfVerticalGuides && <VerticalGuides />}
+      <HorizontalGuides />
 
-        {data.map((datum, index) => (
-            <Bar
-                key={datum.label}
-                fill="orange"
-                x={index * (barWidth + barMargin) + padding}
-                y={height - datum.y - padding}
-                width={barWidth}
-                height={datum.y}
-            />
-            
-        ))}      
-      </svg>    
+      <polyline
+        fill="none"
+        stroke="#0074d9"
+        strokeWidth={STROKE}
+        points={points}
+      />
+    </svg>
   );
 };
 
-export default BarChart;
+LineChart.defaultProps = {
+  height: 200,
+  width: 500,
+  horizontalGuides: 4,
+  verticalGuides: null,
+  precision: 2
+};
+
+export default LineChart;
