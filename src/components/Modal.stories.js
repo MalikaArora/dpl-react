@@ -1,24 +1,29 @@
-import React from 'react';
+import React from "react";
 import Modal from "@avrc/modal";
-import Button from '@dpl/react-button';
+//import "./styles.css";
 
 export default {
-    title: '@avrc - Modal'
-}
+  title: "Modal",
+  args: {
+    title: "@avrc/modal",
+  },
+  argTypes: {
+    title: {
+      control: "text",
+      description: "Title displayed in header",
+      type: { required: true },
+    },
+  },
+};
 
-export const ShowModal = () => {
+export const Basic = (props) => {
   const [isOpen, setOpen] = React.useState(false);
-
-  function toggleModal() {
-      setOpen(!isOpen);
-  }
-
   return (
-      <div>
-      <Button onClick={toggleModal}>Button</Button>
-    <Modal onDismiss={() => setOpen(false)} open={isOpen} title="Title">
-      Hello World
-    </Modal>
-    </div>
+    <>
+      <Modal onDismiss={() => setOpen(false)} open={isOpen} {...props}>
+        A wrapper component for showing contents in a modal
+      </Modal>
+      <button onClick={() => setOpen(true)}>Show Modal</button>
+    </>
   );
-}
+};
