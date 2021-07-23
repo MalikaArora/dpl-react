@@ -3,7 +3,7 @@ import Modal from "@avrc/modal";
 //import "./styles.css";
 
 export default {
-  title: "Modal",
+  title: "@avrc/Modal",
   args: {
     title: "@avrc/modal",
   },
