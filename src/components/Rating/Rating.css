@@ -1,0 +1,17 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .on {
+    color: rgb(231, 228, 21);
+  }
+  .off {
+    color: #ccc;
+  }
+  
+  body {
+    padding: 100px;
+  }

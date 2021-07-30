@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@avrc/change-chart": "^0.1.9",
     "@avrc/colors": "^0.2.9",
     "@avrc/data-helpers": "^0.1.4",
+=======
+>>>>>>> 698fc36887d28a418adc81516fc1517703724b88
     "@avrc/data-select": "^0.4.5",
     "@avrc/data-table": "^0.3.5",
     "@avrc/error-boundary": "^0.1.3",
