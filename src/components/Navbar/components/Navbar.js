@@ -7,31 +7,31 @@ import {Button, Link, Dropdown, Logo} from '../index.js';
 // import Logo from "./logo.svg";
 import '../../../../node_modules/font-awesome/css/font-awesome.min.css';
 
-function Navbar(props) {
+function Navbar() {
 
-  // const extendElement = () => { dropdown ? setDropdown(false) : setDropdown(true); }
+  const extendElement = () => { dropdown ? setDropdown(false) : setDropdown(true); }
 
   const [click, setClick] = useState(false);
-  // const [dropdown, setDropdown] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // const onMouseEnter = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdown(false);
-  //   } else {
-  //     setDropdown(true);
-  //   }
-  // };
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
 
-  // const onMouseLeave = () => {
-  //   if (window.innerWidth < 960) {
-  //     setDropdown(false);
-  //   } else {
-  //     setDropdown(false);
-  //   }
-  // };
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
 
   return (
     <>
@@ -50,9 +50,9 @@ function Navbar(props) {
           </li>
           <li 
             className="nav-item" 
-            onMouseEnter={props.onMouseEnter} 
-            onMouseLeave={props.onMouseLeave} 
-            onClick={props.extendElement} 
+            onMouseEnter={onMouseEnter} 
+            onMouseLeave={onMouseLeave} 
+            onClick={extendElement} 
           >
             <Link
               to='/services'
@@ -61,7 +61,7 @@ function Navbar(props) {
             >
               Services <i className='fa fa-caret-down' />
             </Link>
-            {props.dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu}/>} 
+            {dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu}/>} 
           </li>
           <li className='nav-item'>
             <Link

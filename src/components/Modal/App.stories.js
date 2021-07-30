@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal } from './Modal';
+import RenderModal from './Modal';
 
 export default {
     title: 'Modal'
@@ -24,7 +24,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-export const ShowModal = () => {
+export const ModalStory = props => {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -35,7 +35,7 @@ export const ShowModal = () => {
     <>
       <Container>
         <Button onClick={openModal}>I'm a modal</Button>
-        <Modal showModal={showModal} setShowModal={setShowModal} />
+        <RenderModal showModal={showModal} setShowModal={setShowModal} />
       </Container>
     </>
   );

@@ -10,16 +10,16 @@
     justify-content: start;
     width: 520px;
     min-height: 600px;
-    background: #161a2b;
+    /* background: #161a2b; */
     text-align: center;
-    margin: 128px auto;
+    margin: auto;
     border-radius: 10px;
     padding-bottom: 32px;
   }
   
-  h1 {
+  .todo-h1 {
     margin: 32px 0;
-    color: #fff;
+    color: #000;
     font-size: 24px;
   }
   
@@ -35,15 +35,15 @@
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
+    border: 2px solid #4bb1f8;
     outline: none;
     width: 320px;
     background: transparent;
-    color: #fff;
+    color: #000;
   }
   
   .todo-input::placeholder {
-    color: #e2e2e2;
+    color: black;
   }
   
   .todo-button {
@@ -54,22 +54,22 @@
     outline: none;
     background: linear-gradient(
       90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
+      #4bb1f8 0%,
+      #48a6e9 100%
     );
     color: #fff;
     text-transform: capitalize;
   }
   
   .todo-input.edit {
-    border: 2px solid #149fff;
+    border: 2px solid #48a6e9;
   }
   
   .todo-button.edit {
     background: linear-gradient(
       90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
+      #4bb1f8 0%,
+      #48a6e9 100%
     );
     padding: 16px 22px;
   }
@@ -88,8 +88,8 @@
     color: #fff;
     background: linear-gradient(
       90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
+      #f98a4b 0%,
+      #f87122 100%
     );
   
     padding: 16px;
@@ -100,24 +100,24 @@
   .todo-row:nth-child(4n + 1) {
     background: linear-gradient(
       90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
+      #ff5e5e 0%,
+      #ff4b4b 100%
     );
   }
   
   .todo-row:nth-child(4n + 2) {
     background: linear-gradient(
       90deg,
-      rgba(255, 12, 241, 1) 0%,
-      rgba(250, 0, 135, 1) 100%
+      #838fa4 0%,
+      #7787a3 100%
     );
   }
   
   .todo-row:nth-child(4n + 3) {
     background: linear-gradient(
       90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
+      #53db89 0%,
+      #42e282 100%
     );
   }
   

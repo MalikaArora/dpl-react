@@ -4,9 +4,9 @@
 .team,
 .reports {
   display: flex;
-  overflow: scroll;
-  /* height: 90vh; */
+  /* overflow: scroll; */
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 0.5rem;
 }

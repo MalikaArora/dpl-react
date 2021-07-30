@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './Counter.css';
 function Counter() {
   // Set the initial count state to zero, 0
   const [count, setCount] = useState(0);
@@ -14,13 +14,13 @@ function Counter() {
     setCount(prevCount => prevCount - 1);
   };
   return (
-    <div>
+    <div className='Counter'>
       <div>
-        <button onClick={handleDecrement}>-</button>
-        <h5>Count is {count}</h5>
-        <button onClick={handleIncrement}>+</button>
+        <button className='CounterDecrement' onClick={handleDecrement}>-</button>
+        <h5 className='CounterValue'>{count}</h5>
+        <button className='CounterIncrement' onClick={handleIncrement}>+</button>
       </div>
-      <button onClick={() => setCount(0)}>Reset</button>
+      <button className='CounterReset' onClick={() => setCount(0)}>Reset</button>
     </div>
   );
 }

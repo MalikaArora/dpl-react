@@ -1,0 +1,36 @@
+.ScrollSpy nav {
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	padding: 1.2em 0;
+	color: white;
+	background-color: #1c1b1b;
+	max-height: 4em;
+}
+
+.ScrollSpy nav span {
+	font-size: 18px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s ease;
+	transition-delay: 0.25s;
+	margin: 1em;
+	padding-bottom: 0.3em;
+}
+
+.ScrollSpy nav span:hover {
+	cursor: pointer;
+	border-bottom: 1px solid white;
+}
+
+.ScrollSpy nav span:hover i {
+	color: gold;
+}
+
+.ScrollSpy nav span.activeClass i {
+	color: gold;
+}
+
+.ScrollSpy nav span.activeClass {
+	border-bottom-color: var(--lightAccent);
+}

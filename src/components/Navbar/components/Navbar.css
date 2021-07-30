@@ -17,6 +17,11 @@
     text-decoration: none;
     font-size: 2rem;
   }
+
+  a.navbar-logo:hover{
+    background-color: transparent;
+  }
+  
   
   .fa-firstdraft {
     margin-left: 0.5rem;

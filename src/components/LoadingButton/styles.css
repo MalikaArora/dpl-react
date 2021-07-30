@@ -1,6 +1,9 @@
 .Loading {
-    font-family: sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    align-items: center;
   }
   
   @keyframes load {
@@ -12,13 +15,17 @@
     }
   }
   
-  .loader {
+.Loading  .loaderr {
     border: 4px solid rgba(255, 255, 255, 0.2);
     border-left: 4px solid;
     animation: load 1s infinite linear;
     border-radius: 50%;
     width: 25px;
     height: 25px;
+  }
+
+  .loadingslider{
+    width: 10%;
   }
   
   .loadingbutton {
@@ -27,8 +34,12 @@
     color: #ffffff;
     font-weight: 600;
     border-radius: 6px;
-    background-color: #2080df;
-  }
+    border-color: #48a6e9;
+    background: linear-gradient(
+      90deg,
+      #4bb1f8 0%,
+      #48a6e9 100%
+    );}
   
   .loadingbutton > div {
     display: flex;

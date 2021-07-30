@@ -7,10 +7,14 @@
   }
   
   .card-box {
-    background: #616c6d;
+    background: linear-gradient(
+      90deg,
+      #e9ebf0 0%,
+      #cdcfd4 100%
+    );  
     padding: 10px;
     border-radius: 3px;
-    color: #fff;
+    color: #000;
     margin-bottom: 15px;
   }
   
@@ -18,7 +22,7 @@
     text-transform: capitalize;
   }
   
-  #root {
+  /* #root {
     overflow: auto;
   }  
 
@@ -28,14 +32,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
   }
-  
+   */
   .title {
     text-align: center;
     padding: 15px 0;
-    color: #fff;
+    color: #000;
   }
   
   .loading {
     text-align: center;
-    color: #fff;
+    color: #000;
   }

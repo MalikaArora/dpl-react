@@ -1,0 +1,76 @@
+.Counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+    width: min-content;
+    background-color: white;
+    box-shadow: 2px 2px 5px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+}
+.CounterIncrement {
+    padding: 0;
+    color: darkgreen;
+    background-color: #e2f8e3;
+
+    border-radius: 10px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    font-weight: normal;
+    cursor: pointer;
+}
+.CounterIncrement:hover {
+
+    background-color: rgb(236, 234, 234);
+
+}
+.CounterDecrement {
+    padding: 0;
+    color: darkred;
+    background-color: #fde7e7;
+
+
+    border-radius: 10px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    font-weight: normal;
+    cursor: pointer;
+}
+.CounterDecrement:hover {
+    background-color: rgb(236, 234, 234);
+
+    
+}
+
+.CounterReset {
+    padding: 0;
+    color: blue;
+    background-color: #dfebfa;
+
+
+    border-radius: 10px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.CounterReset:hover {
+    background-color: rgb(236, 234, 234);
+
+    
+}
+
+.CounterValue{
+    color: grey;
+    font-size: 2em;
+    font-weight: bold;
+}

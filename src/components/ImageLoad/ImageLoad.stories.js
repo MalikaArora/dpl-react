@@ -33,9 +33,9 @@ export const App = () => {
     }
   ]
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Progressive Load Image Using React Hooks</h1>
+    <div className="imgload">
+      <header className="imgload-header">
+        <h1>Progressive Image Load</h1>
         {/* Loading a blurred image first enhances the UX and reduces a website’s loading time significantly
         <br></br> */}
         <div className="wrapper">

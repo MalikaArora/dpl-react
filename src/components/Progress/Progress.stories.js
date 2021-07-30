@@ -7,7 +7,8 @@ export default {
 }
 
 export const ShowProgress = (props) => {
-    return <>
+    return <div className='ShowProgress'>
+
 		<h1>Progress Bar - Different Sizes & Progress</h1>
 		<Progress color='#e55353' done="70" height='30'/>
         <Progress color='#e55353' done="20" height='15'/>
@@ -23,7 +24,7 @@ export const ShowProgress = (props) => {
         <Progress color='#e55353' done="70" height='20' gradient={true}/>
         <h1>   -</h1>
 
-	</>
+	</div>
 }
 
 ShowProgress.storyName='Linear Progress Bar';

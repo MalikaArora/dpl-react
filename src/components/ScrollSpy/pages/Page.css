@@ -1,0 +1,43 @@
+.pages section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	border-bottom: 1px solid lightgrey;
+}
+
+.pages section:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.pages section img,
+.pages section div {
+	height: auto;
+	width: 100%;
+}
+
+.pages section img {
+	width: 50%;
+}
+
+.pages section div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 1em;
+}
+
+@media screen and (max-width: 900px) {
+	.pages section,
+	.pages section:nth-child(even) {
+		flex-direction: column;
+	}
+
+	.pages section img {
+		height: auto;
+		width: auto;
+		max-width: 100vw;
+	}
+}

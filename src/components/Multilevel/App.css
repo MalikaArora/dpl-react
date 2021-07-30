@@ -1,0 +1,23 @@
+.App-main {
+  height: 100vh;
+}
+
+.example {
+  padding: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-align-start {
+  align-items: start;
+}

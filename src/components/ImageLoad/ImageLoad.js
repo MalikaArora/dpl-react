@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
-
 const ImageLoad = React.memo(({ src, placeholder, alt = "" }) => {
   const [loading, setLoading] = useState(true);
   const [currentSrc, updateSrc] = useState(placeholder);

@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation it renders global nav variant 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  fill: currentColor;
+}
+
+.c0 li,
+.c0 a,
+.c0 button {
+  color: #FFFFFF;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  z-index: 10000;
+  font-size: 12px;
+  border-radius: 2px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  overflow-wrap: break-word;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4:after {
+  display: block;
+  content: attr(data-text);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.25rem;
+}
+
+.c3 *:first-child {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 button,
+.c3 a {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 a,
+.c3 button {
+  line-height: 1.5rem;
+}
+
+.c3 *:first-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > button:hover,
+.c3 > a:hover,
+.c3 > button:focus,
+.c3 > a:focus {
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #282A2E, 0 0 0 5px #FFFFFF;
+}
+
+.c3 a,
+.c3 button {
+  padding: 0.75rem 0.5rem;
+  position: relative;
+}
+
+<nav
+  aria-label="global-navigation"
+  class="c0 uitk-navigation c1"
+>
+  <ul
+    class="c2"
+  >
+    <li
+      class="c3"
+    >
+      <a
+        href="/home"
+      >
+        <span>
+          <span
+            class="c4"
+            data-text="home"
+          >
+            home
+          </span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Navigation it renders horizontal nav variant 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(194,86,8,0.05),0 2px 8px 0 rgba(0,0,0,0.1);
+  padding-left: 2rem;
+  border-bottom: 1px solid #D0D0CE;
+}
+
+.c0 button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  fill: currentColor;
+}
+
+.c0 li,
+.c0 a,
+.c0 button {
+  color: #282A2E;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  z-index: 10000;
+  color: #FFFFFF;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 a,
+.c2 button {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.c2 a:focus,
+.c2 button:focus {
+  outline: none;
+}
+
+.c4 {
+  overflow-wrap: break-word;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4:after {
+  display: block;
+  content: attr(data-text);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.75rem 0.25rem;
+  position: relative;
+}
+
+.c3 *:first-child {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 button,
+.c3 a {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > a,
+.c3 > button {
+  padding: 0.5rem;
+}
+
+.c3 > a:hover,
+.c3 > button:hover,
+.c3 > a:focus,
+.c3 > button:focus {
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF,0 0 0 5px #C25608;
+  background-color: #C25608;
+  color: #FFFFFF;
+}
+
+.c3 *:first-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<nav
+  aria-label="horizontal-navigation"
+  class="c0 uitk-navigation c1"
+>
+  <ul
+    class="c2"
+  >
+    <li
+      class="c3"
+    >
+      <a
+        href="/home"
+      >
+        <span>
+          <span
+            class="c4"
+            data-text="home"
+          >
+            home
+          </span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Navigation it renders vertical nav variant 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  width: 17.5rem;
+  height: 100%;
+  overflow: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  padding-top: 2rem;
+  background: #FFFFFF;
+  z-index: 1100;
+  box-shadow: 1px 0 4px 0 rgba(194,86,8,0.15), 2px 0 8px 0 rgba(136,139,141,0.2);
+}
+
+.c0 button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  fill: currentColor;
+}
+
+.c0 a svg,
+.c0 button svg {
+  fill: #C25608;
+}
+
+.c0 a:hover svg,
+.c0 button:hover svg,
+.c0 a:focus svg,
+.c0 button:focus svg {
+  fill: currentColor;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c6.c6 svg {
+  fill: currentColor;
+}
+
+.c5 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.c5:after {
+  display: block;
+  content: attr(data-text);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  z-index: 10000;
+  position: relative;
+}
+
+.c2:before {
+  content: "";
+  height: 1px;
+  background-color: #D0D0CE;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0.5rem;
+}
+
+.c2 a,
+.c2 button {
+  width: 100%;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: #282A2E;
+}
+
+.c2 a:focus,
+.c2 button:focus {
+  outline: none;
+}
+
+.c4 {
+  display: inline-block;
+}
+
+.c4 > span {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 *:first-child {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 button,
+.c3 a {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > a,
+.c3 > button {
+  position: relative;
+}
+
+.c3 > a:before,
+.c3 > button:before {
+  content: "";
+  height: 1px;
+  background-color: #D0D0CE;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0.5rem;
+}
+
+.c3 > a,
+.c3 > button {
+  position: relative;
+  padding: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.c3 > a:hover,
+.c3 > button:hover,
+.c3 > a:focus,
+.c3 > button:focus {
+  color: #FFFFFF;
+  background-color: #C25608;
+}
+
+.c3 > a:hover:before,
+.c3 > button:hover:before,
+.c3 > a:focus:before,
+.c3 > button:focus:before {
+  background: transparent;
+}
+
+.c3 > a:hover:after,
+.c3 > button:hover:after,
+.c3 > a:focus:after,
+.c3 > button:focus:after {
+  width: auto;
+  height: auto;
+  background: none;
+  border: 2px solid #FFFFFF;
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+}
+
+<nav
+  aria-label="vertical-navigation"
+  class="c0 uitk-navigation c1"
+>
+  <ul
+    class="c2"
+  >
+    <li
+      class="c3"
+    >
+      <button
+        aria-expanded="false"
+        class="c4"
+        type="button"
+      >
+        <span>
+          <span
+            class="c5"
+            data-text="home"
+          >
+            home
+             
+          </span>
+        </span>
+        <div
+          class="c6"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon "
+            fill="#282A2E"
+            focusable="false"
+            height="24px"
+            role="img"
+            style="display: inline-block;"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.3 8.35l-5.1 6.95L7 8.35z"
+            />
+          </svg>
+        </div>
+      </button>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Navigation it renders with icons 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  fill: currentColor;
+}
+
+.c0 li,
+.c0 a,
+.c0 button {
+  color: #FFFFFF;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  z-index: 10000;
+  font-size: 12px;
+  border-radius: 2px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
+  overflow-wrap: break-word;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5:after {
+  display: block;
+  content: attr(data-text);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.25rem;
+}
+
+.c3 *:first-child {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 button,
+.c3 a {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 a,
+.c3 button {
+  line-height: 1.5rem;
+}
+
+.c3 *:first-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > button:hover,
+.c3 > a:hover,
+.c3 > button:focus,
+.c3 > a:focus {
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #282A2E, 0 0 0 5px #FFFFFF;
+}
+
+.c3 a,
+.c3 button {
+  padding: 0.75rem 0.5rem;
+  position: relative;
+}
+
+<nav
+  aria-label="global-navigation"
+  class="c0 uitk-navigation c1"
+>
+  <ul
+    class="c2"
+  >
+    <li
+      class="c3"
+    >
+      <a
+        href="/home"
+      >
+        <span>
+          <span
+            class="c4"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon "
+              fill="#C25608"
+              focusable="false"
+              height="16px"
+              role="img"
+              style="display: inline-block;"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.8 9.1c-.85-.7-2.5-2.1-4.25-3.6-2.05-1.75-4.2-3.55-5.25-4.4-.8-.6-1.9-.6-2.65 0-.9.75-2.9 2.45-4.85 4.1-1.9 1.6-3.75 3.2-4.65 3.9l.65.75C2.3 9.45 3.05 8.8 4 8v13.5c0 .75.75 1.5 1.5 1.5h4V12.5h5V23h4c.75 0 1.5-.75 1.5-1.5V8.05c.9.75 1.7 1.4 2.2 1.85l.6-.8zM19 21.5c0 .2-.3.5-.5.5h-3V11.5h-7V22h-3c-.2 0-.5-.3-.5-.5V7.2c.5-.4.95-.8 1.45-1.25C8.4 4.3 10.4 2.6 11.3 1.85c.4-.3.95-.3 1.35 0 1 .8 3.15 2.65 5.2 4.4.35.3.75.65 1.1.95v14.3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="c5"
+            data-text="home"
+          >
+            home
+          </span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

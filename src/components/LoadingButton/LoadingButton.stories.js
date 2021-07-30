@@ -30,11 +30,12 @@ function App() {
           isLoading={isSecondButtonLoading}
           onClick={() => setIsSecondButtonLoading(true)}
         >
-          Click me to start a nicer loading button experience!
+          Loading Button
         </NiceButton>
       </div>
       Try increasing the loading speed
       <input
+      className='loadingslider'
         type="range"
         max={10}
         min={1}
