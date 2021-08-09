@@ -16,6 +16,7 @@ export default {
 export const ShowTooltip = () => {
     
       return (
+          <div className="tooltip">
         <section>
         {/* <h1>Tooltips using React Hooks</h1> */}
         <Tooltip title="Tooltip on top" position="top">
@@ -31,6 +32,7 @@ export const ShowTooltip = () => {
             <button>Tooltip on right</button>
         </Tooltip>
     </section>
+    </div>
        );
       }
 

@@ -1,7 +1,7 @@
 
 // Externals
 import React from 'react';
-import './mainstyles.module.css';
+import './mainstyles.css';
 // Internals
 import Popover from './Popover';
 
@@ -16,6 +16,7 @@ export default {
 export const ShowPopover = () => {
     
       return (
+          <div className='popover'>
         <section>
         {/* <h1>Popovers using React Hooks</h1> */}
         <Popover title="Popover on top" position="top">
@@ -31,6 +32,7 @@ export const ShowPopover = () => {
             <button>Popover on right</button>
         </Popover>
     </section>
+    </div>
        );
       }
 

@@ -4,21 +4,21 @@
     box-sizing: border-box;
 } */
 
-section {
+div.popover section {
     margin: 100px auto;
     /* width: 1000px; */
     text-align: center;
 }
 
-h1 {
+.popover h1 {
     margin-bottom: 40px;
 }
 
-button {
+.popover button {
     padding: 12px;
     font-weight: bold;
 }
 
-.heading {
+.popover .heading {
     margin-bottom: 10px;
 }
