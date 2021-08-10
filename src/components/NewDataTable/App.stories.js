@@ -1,5 +1,8 @@
 import DataTable from "./datatable/index";
 
+export default {
+  title: 'New Data Table'
+}
 const columns = [
   { name: "No#", field: "id", sortable: false, bools: false},
   { name: "Name", field: "name", sortable: true, bools: false},
@@ -7,11 +10,14 @@ const columns = [
   // { name: "Comment", field: "body", sortable: true },
   // { name: "From", field: "from", sortable: true},
   { name: "Human", field: "human", sortable: true, bools: true},
-  { name: "Life", field: "life", sortable: true, bools: true}
+  { name: "Life", field: "life", sortable: true, bools: true},
+  { name: "Choices", field: "choices", sortable: false, check: true},
+
+
 ];
 
 const rows = [
-  { id: '1', name: 'Cheese', human:"true", life:"false" },
+  { id: '1', name: 'Cheese', human:"true", life:"false", choices:"checked" },
   { id: '2', name: 'Milk', human:"false", life:"false" },
   { id: '3', name: 'Yoghurt', human:"true", life:"true" },
   { id: '4', name: 'Heavy Cream', human:"true", life:"false" },
@@ -30,7 +36,7 @@ const rows = [
 //   { id: '7', name: 'Fancy French Cheese 🇫🇷', email:"stu", body:"sss", from:"polkjm" },
 // ];
 
-function App() {
+export const App = () => {
   return (
     <div>
       <DataTable columns={columns} rows={rows}></DataTable>
@@ -38,4 +44,3 @@ function App() {
   );
 }
 
-export default App;
