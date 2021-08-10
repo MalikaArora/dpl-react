@@ -17,7 +17,7 @@ const TimePickerMdm = () => {
 
   return (
 
-    <div>  
+    <div className='timepicker'>  
       <select name="hour" id="hour" className="dropdown">
         <option value="12">12</option>  
         <option value="01">01</option>

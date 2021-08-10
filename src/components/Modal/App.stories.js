@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import RenderModal from './Modal';
-
+import Modal from './index.js';
 export default {
     title: 'Modal'
 }
@@ -35,7 +34,7 @@ export const ModalStory = props => {
     <>
       <Container>
         <Button onClick={openModal}>I'm a modal</Button>
-        <RenderModal showModal={showModal} setShowModal={setShowModal} />
+        <Modal showModal={showModal} setShowModal={setShowModal} />
       </Container>
     </>
   );

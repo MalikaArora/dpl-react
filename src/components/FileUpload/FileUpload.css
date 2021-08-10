@@ -1,3 +1,8 @@
 .file-upload>input{
 display: none;
 }
+
+.uploaded {
+    color: grey;
+    margin-left: 4%;
+}

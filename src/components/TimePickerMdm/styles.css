@@ -1,4 +1,4 @@
-.dropdown{
+.timepicker .dropdown{
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -6,7 +6,7 @@
     width: 35px;
 }
 
-.button{
+.timepicker .button{
     width:100px;
     height: 100px;
     font-size: small;

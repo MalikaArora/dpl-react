@@ -12,13 +12,13 @@ export const App = () => {
   return (
     <div className="MegaMenu">
       <div>
-        <div className="recursive-selector">
+        <div className="recursive-selector" style={{ color: isOpen ? '#ba5710' : '#495057'}}>
           <div
             onClick={() => {
               setIsOpen(!isOpen);
             }}
           >
-            <span> Choose folder </span>
+            <span> Content </span>
           </div>
 
             
@@ -29,7 +29,7 @@ export const App = () => {
                     onClick={() => {
                       setIsOpen(!isOpen);
                     }}
-                    className='closemega'>X</div>}
+                    className='closemega'>x</div>}
             <div
               // <motion.div
               className="recursive-selector-collapsed "

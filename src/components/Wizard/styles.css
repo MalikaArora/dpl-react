@@ -1,0 +1,172 @@
+
+  
+  
+  .step-component {
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-component {
+    height: 30px;
+    border-radius: 25px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+        
+  }
+  .prev-button {
+    margin-right: 0.5%;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 30px;
+    
+  }
+
+  .next-button {
+    margin-left: 0.5%;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 30px;
+    
+  }
+  .save-button {
+    float: right;
+    margin-right: 0.5%;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 30px;
+    
+  }
+
+  .submit-button {
+    float: right;
+    background-color: rgb(220, 100, 0);
+    color: aliceblue;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    cursor: pointer;
+    border-radius: 8px;
+    
+  }
+
+  .cancel-button {
+    float: right;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 89, 255);
+    border-style: hidden;
+    height: 30px;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    cursor: pointer;
+    
+  }
+  
+  .wizard {
+    margin: 50px 0px;
+    height: 4px;
+    background-color: rgb(204, 211, 206);
+  }
+  
+  .wizard-progress {
+      width: 0;
+      height: 100%;
+      background-color: rgb(220, 100, 0);
+  }
+  
+  .wizard-items {
+      list-style: none;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: -85px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .wizard-item {
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .wizard-item::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      margin-top: 72px;
+      background-color: #ccc;
+      display: block;
+      border-radius: 100%;
+  }
+  
+  .wizard-content {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(57, 147, 231);
+      width: 100px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-align: center;
+  }
+  
+  .wizard-item.active::before {
+      background-color: rgb(220, 100, 0);
+  }
+  
+  .wizard-item.active .wizard-content {
+      color: rgb(8, 8, 8);
+  }
+  
+  .wizard-item.completed::before {
+    border : 2px solid rgb(220, 100, 0);    
+  }
+
+  .wizard-item.disabled::before {
+    background-color: rgb(204, 211, 206);
+  }
+
+  .wizard-item.disabled .wizard-content {
+    color: rgb(160, 160, 160);
+  }
+
+.notification-title {
+  color: rgb(220, 100, 0);
+}
+
+.notification-image {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+    
+}
+
+.notification-image img {
+    width: 30px;
+    height: 30px;
+}
+
+.cancel-dialog-buttons {
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.continue-dialog-buttons {
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.wizard-progress-nonlinear {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(205, 209, 207);
+}

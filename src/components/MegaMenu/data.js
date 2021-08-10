@@ -175,73 +175,7 @@ export const folders = [
     },
 
 
-    {
-      id: 34,
-      name: "Decision Support",
-      parent_id: null
-  },
-  {
-      id: 35,
-      name: "Dental",
-      parent_id: null
-  },
-  {
-      id: 36,
-      name: "Diabetes",
-      parent_id: null
-  },
-  {
-      id: 37,
-      name: "Condition Management",
-      parent_id: null
-  },
-  {
-      id: 38,
-      name: "ER Decision Support",
-      parent_id: null
-  },
-  {
-      id: 39,
-      name: "Fertility Solutions",
-      parent_id: null
-  },
-  {
-      id: 27,
-      name: "Care Gap and Preventive Reminders",
-      parent_id: 10
-  },
-  {
-      id: 28,
-      name: "Healthy Back",
-      parent_id: 10
-  },
-  {
-    // GRAND CHILDREN
-    id: 29,
-    name: "Content",
-    parent_id: 18,
-    className: 'title'
-  },
-  {
-    id: 30,
-    name: "Segmentation Profile",
-    parent_id: 18
-  },
-  {
-    id: 31,
-    name: "Segmentation Compare and Contrast",
-    parent_id: 18
-  },
-  {
-    id: 32,
-    name: "Outcomes Performance",
-    parent_id: 18
-  },
-  {
-    id: 33,
-    name: "Lifestyle and Other Risk Factors",
-    parent_id: 18
-  },
+
     
   ];
   

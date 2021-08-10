@@ -3,8 +3,9 @@ import React, { useRef, useEffect, useCallback, Children } from 'react';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import Logo from './images/logo.svg';
-import ShowModal from './Modal';
 const Background = styled.div`
+top: 0;
+left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -14,7 +15,8 @@ const Background = styled.div`
   align-items: center;
 `;
 
-export const ModalWrapper = styled.div`
+ const ModalWrapper = styled.div`
+
   width: 600px;
   height: 300px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
@@ -27,14 +29,14 @@ export const ModalWrapper = styled.div`
   border-radius: 10px;
 `;
 
-export const ModalImg = styled.img`
+ const ModalImg = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 10px 0 0 10px;
   background: #000;
 `;
 
-export const ModalContent = styled.div`
+ const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +57,7 @@ export const ModalContent = styled.div`
   }
 `;
 
-export const CloseModalButton = styled(MdClose)`
+ const CloseModalButton = styled(MdClose)`
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -66,7 +68,7 @@ export const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-function Modal({ showModal, setShowModal }, props) {
+function Modal ({ showModal, setShowModal }, props) {
     console.log(showModal);
 
     const modalRef = useRef();
@@ -99,10 +101,14 @@ function Modal({ showModal, setShowModal }, props) {
         <div>
             {showModal ? (
                 <Background onClick={closeModal} ref={modalRef}>
-                    true
                     <ModalWrapper showModal={showModal}>
                         {/* <ShowModal></ShowModal> */}
-                        {props.children}
+                        <ModalImg src={Logo} alt='camera' />
+              <ModalContent>
+                <h3>We create a healthier world.</h3>
+                <p>One insight, one connection, one person at a time.</p>
+                <button>Join Now</button>
+              </ModalContent>
                         <CloseModalButton
                             aria-label='Close modal'
                             onClick={() => setShowModal(prev => !prev)}
@@ -113,6 +119,6 @@ function Modal({ showModal, setShowModal }, props) {
         </div>
     );
 }
-
-// export {Modal, ModalWrapper, ModalImg, ModalContent, CloseModalButton, Logo};
 export default Modal;
+export {ModalWrapper, ModalImg, ModalContent, CloseModalButton, Logo};
+// export Modal;
