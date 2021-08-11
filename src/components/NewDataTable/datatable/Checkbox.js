@@ -3,7 +3,7 @@ import React from "react";
 const Checkbox = ({ id, type, name, handleClick, isChecked }, props) => {
   return (
     <input
-      id={id}
+    //   id={id}
       name={name}
       type={type}
       onChange={handleClick}

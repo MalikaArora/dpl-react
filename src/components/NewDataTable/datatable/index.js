@@ -167,12 +167,20 @@ const DataTable = (props) => {
 
                                             <td>
                                                 <div>
-                                                    <Checkbox
+                                                    {/* <Checkbox
                                                         type="checkbox"
                                                         name="selectAll"
                                                         id="selectAll"
                                                         handleClick={handleSelectAll}
                                                         isChecked={isCheckAll}
+                                                    /> */}
+
+                                                    <input
+                                                        type="checkbox"
+                                                        name="selectAll"
+                                                        id="selectAll"
+                                                        onChange={handleSelectAll}
+                                                        checked={isCheckAll}
                                                     />
                                                     Select All                                                </div>
                                             </td>
@@ -199,13 +207,24 @@ const DataTable = (props) => {
                                         <td>
                                                 <>
                                                 
-                                                    <Checkbox
+                                                    {/* <Checkbox
                                                         key={comment.id}
                                                         type="checkbox"
                                                         name={comment.name}
                                                         id={comment.id}
                                                         handleClick={handleClick}
                                                         isChecked={isCheck.includes(comment.id)}
+                                                        // isChecked={true}
+                                                        // isChecked={comment.choices || isCheck.includes(comment.id)}
+                                                    /> */}
+
+                                                    <input
+                                                        key={comment.id}
+                                                        type="checkbox"
+                                                        name={comment.name}
+                                                        // id={comment.id}
+                                                        onChange={handleClick}
+                                                        checked={isCheck.includes(comment.id)}
                                                         // isChecked={true}
                                                         // isChecked={comment.choices || isCheck.includes(comment.id)}
                                                     />
