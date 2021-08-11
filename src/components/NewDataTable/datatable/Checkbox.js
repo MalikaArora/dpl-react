@@ -1,6 +1,6 @@
 import React from "react";
 
-const Checkbox = ({ id, type, name, handleClick, isChecked }) => {
+const Checkbox = ({ id, type, name, handleClick, isChecked }, props) => {
   return (
     <input
       id={id}
@@ -8,6 +8,8 @@ const Checkbox = ({ id, type, name, handleClick, isChecked }) => {
       type={type}
       onChange={handleClick}
       checked={isChecked}
+      defaultChecked={true}
+    //   {props.comment.choices ? checked }
     />
   );
 };

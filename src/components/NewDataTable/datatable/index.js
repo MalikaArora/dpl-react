@@ -7,6 +7,7 @@ import './datatable.css';
 
 
 const DataTable = (props) => {
+    var count=0;
     const { columns } = props;
     const { rows } = props;
     const [comments, setComments] = useState([]);
@@ -197,6 +198,7 @@ const DataTable = (props) => {
                                         column.check ?
                                         <td>
                                                 <>
+                                                
                                                     <Checkbox
                                                         key={comment.id}
                                                         type="checkbox"
@@ -204,6 +206,8 @@ const DataTable = (props) => {
                                                         id={comment.id}
                                                         handleClick={handleClick}
                                                         isChecked={isCheck.includes(comment.id)}
+                                                        // isChecked={true}
+                                                        // isChecked={comment.choices || isCheck.includes(comment.id)}
                                                     />
                                                     {comment.name}
                                                     </>

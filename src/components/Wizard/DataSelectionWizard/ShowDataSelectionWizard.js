@@ -132,6 +132,7 @@ const ShowDataSelectionWizard = () => {
                   <br></br>
                   <label for="dstsct">Select Dataset:   </label>
                   <select name="dstsct" id="dstsct" value={dstscttyp} onChange={handleChange4} >
+                    <option value="" selected disabled hidden>Select option</option>
                       <option value="1">Dataset 1</option>
                       <option value="2">Dataset 2</option>
                       <option value="3">Dataset 3</option>
