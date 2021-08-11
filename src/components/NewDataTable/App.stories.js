@@ -12,7 +12,7 @@ const columns = [
   { name: "Human", field: "human", sortable: true, bools: true},
   { name: "Life", field: "life", sortable: true, bools: true, check: false},
   { name: "Choices", field: "choices", sortable: false, check: true},
-  { name: "Choices2", field: "choices2", sortable: false, check: true},
+  { name: "Choices2", field: "choices", sortable: false, check: true},
 
 
 ];
