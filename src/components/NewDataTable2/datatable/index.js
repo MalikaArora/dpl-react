@@ -108,8 +108,7 @@ const DataTable = (props) => {
         if ((sorting.field)&&(isSortable == "true")) {
             const reversed = sorting.order === "asc" ? 1 : -1;
             computedComments = computedComments.sort(
-                (a, b) =>
-                    reversed * a[sorting.field].localeCompare(b[sorting.field])
+                (a, b) => ((isNaN(a[sorting.field])) ? (reversed * a[sorting.field].localeCompare(b[sorting.field])) : ((sorting.order == "asc") ? "" : -1) )
             );
         }
         return computedComments.slice(
