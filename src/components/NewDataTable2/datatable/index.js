@@ -133,7 +133,7 @@ const DataTable = (props) => {
                             onSorting={(field, order) => setSorting({ field, order })}                        
                         />
                         <tbody>
-                            <tr>
+                            <tr className="sticky-head">
                                 {columns.map((item, itemindex) => (
                                   (item.bools ? 
                                     <td>
@@ -199,7 +199,8 @@ const DataTable = (props) => {
                                 ))}
                             </tr>
                             {((showCheckbox == "true") ? 
-                                    <tr>
+                                <tr className="sticky-head2">
+                               
                                         {commentsData.map((comment, index) => (
                                             ((index == 0) 
                                                 ? 
@@ -225,8 +226,9 @@ const DataTable = (props) => {
                              )
 
                             }
+
                             {commentsData.map((comment, indx) => (
-                                <tr>
+                                <tr >
                                     {columns.map((column, colidx) => (
                                         ((showCheckbox == "true" && ((comment[column.field] == "true")||(comment[column.field] == "false"))) 
                                             ? <td><input type="checkbox" checked={(comment[column.field] == "true")} 
