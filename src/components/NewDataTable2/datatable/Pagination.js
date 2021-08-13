@@ -36,7 +36,7 @@ const Pagination = ({
 
     return (
         <>
-        {/* <div className='pag-container'> */}
+        {/* <div className='pagi'> */}
             <button className='pag-prev'
                 onClick={() => onPageChange(currentPage - 1)}
                 disabled={currentPage === 1}
@@ -48,7 +48,7 @@ const Pagination = ({
                 onClick={() => onPageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
             >next</button>
-        {/* </div> */}
+          {/* </div> */}
         </>
     );
 };

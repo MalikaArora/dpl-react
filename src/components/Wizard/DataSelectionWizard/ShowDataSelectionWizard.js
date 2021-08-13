@@ -147,6 +147,8 @@ const ShowDataSelectionWizard = () => {
                 <div className="step-body">
                   <label for="mdlpop">Medical Population:  </label>
                   <select name="mdlpop" id="mdlpop" value={mdlpoptyp} onChange={handleChange5} >
+                  <option value="" selected disabled hidden>Select option</option>
+
                       <option value="1">Include</option>
                       <option value="2">Exclude</option>
                   </select>

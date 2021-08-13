@@ -1,5 +1,7 @@
 import DataTable from "./datatable/index";
-
+export default{
+  title: 'New Data Table 2'
+}
 const columns = [
   { name: "No#", field: "id", sortable: false, bools: false },
   { name: "Name", field: "name", sortable: true, bools: false },
@@ -64,7 +66,7 @@ const rows = [
 //   { id: '7', name: 'Fancy French Cheese 🇫🇷', email:"stu", body:"sss", from:"polkjm" },
 // ];
 
-function App() {
+export const App = () => {
   return (
     <div>
       <DataTable columns={columns} rows={rows} isSortable="true" showCheckbox="true"></DataTable>
@@ -72,4 +74,3 @@ function App() {
   );
 }
 
-export default App;

@@ -122,9 +122,9 @@ const DataTable = (props) => {
 
     return (
         <>
-            <div className="row w-100">
+            <div className=" row w-100">
                 {/* {alert(JSON.stringify(searchInput))} */}
-                <div className="col mb-3 col-12 text-center">
+                <div className="dt col mb-3 col-12 text-center">
                     
                     <table className="table table-striped">
                         <TableHeader
@@ -240,9 +240,9 @@ const DataTable = (props) => {
                             ))}
                         </tbody>
                     </table>
+                    </div>
                     <div className="row">
                     
-                        <div className="col-md-6">
                             <div className='pag-container'>
                                 <label for="perpage">Rows per page:  </label>
                                     <select name="perpage" id="perpage" value={itemsPerPage} onChange={handleChange} >
@@ -257,11 +257,10 @@ const DataTable = (props) => {
                                     onPageChange={page => setCurrentPage(page)}
                                 />
                             </div>
-                        </div>
                         
                     </div>
                 </div>
-            </div>            
+            {/* </div>             */}
         </>
     );
 };
