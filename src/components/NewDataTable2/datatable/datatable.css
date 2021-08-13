@@ -45,10 +45,10 @@ body{
 
 
 .pag-container{
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     cursor: pointer;
-    margin: 1%; */
+    margin: 1%;
 }
 
 .pagi{
