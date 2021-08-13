@@ -3,7 +3,7 @@ export default{
   title: 'New Data Table 2'
 }
 const columns = [
-  { name: "No#", field: "id", sortable: false, bools: false },
+  { name: "No#", field: "id", sortable: true, bools: false },
   { name: "Name", field: "name", sortable: true, bools: false },
   { name: "Email", field: "email", sortable: true, bools: false },
   // { name: "Comment", field: "body", sortable: true, bools: false },
